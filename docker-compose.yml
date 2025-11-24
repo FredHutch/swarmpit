@@ -78,7 +78,8 @@ services:
     deploy:
       mode: global
       labels:
-        swarmpit.agent: "true"
+        - "traefik.enable=true"
+        - "swarmpit.agent=true"
       resources:
         limits:
           cpus: "0.10"
