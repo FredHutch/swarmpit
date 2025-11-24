@@ -20,7 +20,7 @@ deploy:
   stage: deploy
   only:
     refs:
-      - main
+      - master
   script:
     - sleep 5
     - echo $SC_SWARM_CICD_SSH_KEY | base64 -d > ./sc_swarm_cicd_ssh_key
